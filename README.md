@@ -1,7 +1,5 @@
-# pre-commit-golang-kustomize
-Pre-commit hook for running kustomize
-
-pre-commit hook which runs kustomize with `go get ...`. 
+# pre-commit-kustomize
+Pre-commit hook for running kustomize from your native system
 
 
 ## Example of .pre-commit-config.yaml that verifies that 3 overlays are not broken
@@ -15,7 +13,7 @@ repos:
     -   id: check-yaml
         args: [--allow-multiple-documents]
     -   id: check-added-large-files
--   repo: https://github.com/gnagel/pre-commit-golang-kustomize
+-   repo: https://github.com/gnagel/pre-commit-kustomize
     rev: master
     hooks:
     -   id: kustomize
