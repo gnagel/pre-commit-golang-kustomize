@@ -1,6 +1,6 @@
 -   id: kustomize
-    name: kustomize (via docker)
-    description: kustomize provided by docker
+    name: kustomize (via system)
+    description: kustomize
     entry: kustomize build
     language: system
     args: [overlay/production]
